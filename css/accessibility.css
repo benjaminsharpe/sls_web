@@ -1,0 +1,14 @@
+.open-menu-link[role="button"]:focus-visible,
+.close-menu-link[role="button"]:focus-visible {
+  outline: 3px solid var(--sls-yellow, #ffff00);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-link-mouseover *,
+  .mega-menu-overlay,
+  .sidebar-menu-content {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

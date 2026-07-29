@@ -20,8 +20,8 @@ Keep every contribution small, understandable, and easy to review. Explain actio
 Treat the sponsor roster as site-wide content, not a one-page change.
 
 1. Update the correct Gold, Silver, or Bronze section in `sponsors.html`.
-2. For a Gold Sponsor, add the same card to the footer sponsor grid in `donate.html`, `events.html`, `fellowships.html`, `index.html`, `newsletter.html`, `restorations.html`, `submit.html`, and `team.html`.
-3. Update the bottom sponsor carousel in every HTML page. Each page contains three repeated `.brand-wrap` loops; add or remove the same logo in all three loops on all nine pages.
+2. For Gold sponsors and the sponsor carousel, update the shared roster in `js/sponsor-roster.js`. It updates every gold grid and all three carousel loops on every page at runtime.
+3. Keep `sponsors.html` as the no-JavaScript fallback and update its Gold grid to match the shared roster.
 4. Use the shared `.new-gold-partner-card img` sizing rule for Gold logos. It gives every card the Sony Pictures Animation-sized frame (`70%` width × `60%` height with `object-fit: contain`); do not add one-off size rules for individual Gold logos.
 5. Treat Content for Change as permanently retired. Never restore `images/asset-202002.svg` to an HTML page or carousel.
 6. Confirm the sponsor’s name, tier, asset filename, accessible alt text, and sizing before handoff.
