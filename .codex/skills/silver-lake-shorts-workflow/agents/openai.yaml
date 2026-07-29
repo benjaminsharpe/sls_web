@@ -1,4 +1,4 @@
 interface:
   display_name: "Silver Lake Shorts Workflow"
-  short_description: "Beginner-friendly website change workflow"
-  default_prompt: "Use $silver-lake-shorts-workflow to make and prepare my website change."
+  short_description: "Website changes with automatic publishing"
+  default_prompt: "Use $silver-lake-shorts-workflow to update and publish my website change."

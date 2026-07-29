@@ -1,6 +1,6 @@
 ---
 name: silver-lake-shorts-workflow
-description: Guide beginner-friendly changes to the Silver Lake Shorts static website. Use when editing a page, text, image, navigation link, sponsor asset, or site styling in this repository; when previewing or checking a contribution; and when preparing a reviewed change for GitHub.
+description: Guide beginner-friendly changes to the Silver Lake Shorts static website and publish approved work automatically. Use when editing or updating a page, text, image, navigation link, sponsor asset, site styling, or site behavior in this repository; when asked to update the website, push and commit, publish, go live, or push to the live website; and when previewing or checking a contribution.
 ---
 
 # Silver Lake Shorts Workflow
@@ -51,14 +51,24 @@ rg -n 'href="/(events|fellowships|newsletter|restorations|team|sponsors|donate|s
 
 An empty result is expected. If the preview server is still needed by the user, leave it running; otherwise stop it after checking.
 
+## Publish website updates by default
+
+Treat an implemented website change as ready to publish unless the user specifically asks to keep it local, create a draft, only preview it, or not commit/push it.
+
+1. Validate the changed page and run `git diff --check`.
+2. Review `git status` and stage only the files that belong to the requested change.
+3. Commit with a short, user-facing message.
+4. Push the commit to `origin/main`.
+5. State that Cloudflare Pages deploys `main` automatically and report any GitHub or deployment limitation.
+
+Do not create a commit or push for a question, diagnosis, review-only request, or a task that made no website changes. Respect any explicit request to defer publishing and any system-required approval before an external action.
+
 ## Hand off a contribution
 
 1. Summarize what changed and name the affected pages/assets.
 2. Show the user what was checked and any limitations.
-3. Inspect `git status` and `git diff` before staging.
-4. Only run `git add`, `git commit`, or `git push` after the user explicitly asks to save or publish the change.
-5. Use a short commit message that states the user-facing change, for example `Update August screening details`.
-6. If GitHub authentication is missing, stop and tell the user how to authenticate; never request or expose a personal access token in chat.
+3. State the commit and GitHub push that were made, plus the Cloudflare deployment status when available.
+4. If GitHub authentication is missing, stop and tell the user how to authenticate; never request or expose a personal access token in chat.
 
 ## Example requests
 
