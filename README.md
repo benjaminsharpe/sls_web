@@ -1,16 +1,10 @@
-# Silver Lake Shorts
+# Private website workspace
 
-Self-contained static website for Silver Lake Shorts. The project preserves the original site content, photos, logos, sponsor marks, and nine public pages while removing the original host-specific navigation and email-protection dependency.
+This repository contains a static website and its supporting assets. Keep the repository private unless you deliberately choose to publish the site elsewhere.
 
-## Pages
+## Preview locally
 
-- `index.html` — home
-- `events.html`, `fellowships.html`, `newsletter.html`, `restorations.html`
-- `team.html`, `sponsors.html`, `donate.html`, `submit.html`
-
-## Local preview
-
-On macOS, from this directory run:
+On macOS, open Terminal in this folder and run:
 
 ```sh
 ruby -run -ehttpd . -p4173
@@ -18,7 +12,4 @@ ruby -run -ehttpd . -p4173
 
 Then visit `http://localhost:4173`.
 
-## Deployment
-
-This is a plain static site: publish the repository root with GitHub Pages. No build step or server runtime is required.
-
+No build step is required.
