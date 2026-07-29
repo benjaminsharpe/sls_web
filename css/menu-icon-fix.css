@@ -1,0 +1,23 @@
+/* Keep the hamburger trigger stationary while Webflow swaps its open/close layers. */
+.menu-link-mouseover {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.menu-link-mouseover,
+.open-menu-link,
+.close-menu-link,
+.menu-line-wrapper,
+.menu-line {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.open-menu-link,
+.close-menu-link,
+.menu-line {
+  will-change: transform;
+}
+
+.menu-line-wrapper {
+  pointer-events: none;
+}
