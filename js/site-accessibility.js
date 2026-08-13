@@ -28,6 +28,32 @@
     });
   };
 
+  const removePastEventCards = () => {
+    const events = document.querySelector("#upcoming-events");
+    if (!events) return;
+
+    const months = {
+      january: 0, feburary: 1, february: 1, march: 2, april: 3,
+      may: 4, june: 5, july: 6, august: 7, september: 8,
+      october: 9, november: 10, december: 11
+    };
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    events.querySelectorAll(":scope > div").forEach((card) => {
+      const heading = card.querySelector(".heading-12");
+      const match = heading?.textContent.match(/Friday\s+([A-Za-z]+)\s+(\d+)(?:st|nd|rd|th)\s+(\d{4})/i);
+      if (!match) return;
+
+      const [, monthName, day, year] = match;
+      const month = months[monthName.toLowerCase()];
+      if (month === undefined) return;
+
+      const eventDate = new Date(Number(year), month, Number(day));
+      if (eventDate < today) card.remove();
+    });
+  };
+
   const enhanceMenu = (menu, index) => {
     const open = menu.querySelector(".open-menu-link");
     const close = menu.querySelector(".close-menu-link");
@@ -73,6 +99,7 @@
   const enhanceSite = () => {
     labelIconLinks();
     document.querySelectorAll(".menu-link-mouseover").forEach(enhanceMenu);
+    removePastEventCards();
   };
 
   if (document.readyState === "loading") {
