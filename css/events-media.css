@@ -1,0 +1,9 @@
+/* Event flyers retain their square Instagram composition inside event cards. */
+.event-flyer-video {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
+  max-height: 480px;
+  margin: 0 auto;
+  object-fit: contain;
+}
