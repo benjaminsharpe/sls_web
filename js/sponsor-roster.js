@@ -37,7 +37,7 @@
     { src: "images/asset-201007.svg" },
     { src: "images/asset-201sls_sponsor_glas.svg" },
     { src: "images/sls_sponsor_revival.svg" },
-    { src: "images/sls_sponsor_smcu.svg" }
+    { src: "images/sls_sponsor_smcu.png" }
   ];
 
   const createGoldCard = (sponsor, template) => {
