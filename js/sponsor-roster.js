@@ -16,6 +16,7 @@
     { src: "images/asset-202sls_sponsor_73tv.svg" },
     { src: "images/silver_animationplus.svg" },
     { src: "images/asset-202sls_sponsor_dropout.svg" },
+    { src: "images/sls_sponsor_hornet.png" },
     { src: "images/asset-201.svg" },
     { src: "images/asset-201111111.svg" },
     { src: "images/asset-201sls_sponsor_portal.svg" },

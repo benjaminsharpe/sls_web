@@ -12,3 +12,9 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Leave a consistent amount of space around the tall Starburns Industries mark. */
+.bronze-partner-card-2 .starburns-logo {
+  width: 130px;
+  height: auto;
+}
