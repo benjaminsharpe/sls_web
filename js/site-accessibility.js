@@ -42,7 +42,7 @@
 
     events.querySelectorAll(":scope > div").forEach((card) => {
       const heading = card.querySelector(".heading-12");
-      const match = heading?.textContent.match(/Friday\s+([A-Za-z]+)\s+(\d+)(?:st|nd|rd|th)\s+(\d{4})/i);
+      const match = heading?.textContent.match(/Friday,?\s+([A-Za-z]+)\s+(\d+)(?:st|nd|rd|th)\s+(\d{4})/i);
       if (!match) return;
 
       const [, monthName, day, year] = match;
