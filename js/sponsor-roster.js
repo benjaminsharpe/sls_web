@@ -6,7 +6,8 @@
     { src: "images/759b196ab15dd86d408fefb0169b9368_sls_sponsor_bandera.svg", alt: "Bandera logo", className: "bandera" },
     { src: "images/sls_sponsor_smosh.svg", alt: "Smosh logo", className: "smosh" },
     { src: "images/this_one_sls_sponsor_tierney_corp_edited.svg", alt: "Tierney Corp logo", className: "tierney" },
-    { src: "images/sls_sponsor_tongal.svg", alt: "Tongal logo", className: "tongal" }
+    { src: "images/sls_sponsor_tongal.svg", alt: "Tongal logo", className: "tongal" },
+    { src: "images/sls_sponsor_flipaclip.png", alt: "Flipaclip logo", className: "flipaclip" }
   ];
 
   const carousel = [
@@ -59,7 +60,7 @@
         child.classList.contains("new-gold-partner-card-grid")
       );
       const hasSony = cards.some((card) => card.querySelector('img[src$="asset-202sony.svg"]'));
-      if (!hasSony || cards.length !== gold.length) return;
+      if (!hasSony) return;
 
       const template = cards[0];
       container.dataset.sponsorsSynced = "true";
