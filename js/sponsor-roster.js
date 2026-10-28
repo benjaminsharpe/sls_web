@@ -39,7 +39,8 @@
     { src: "images/asset-201007.svg" },
     { src: "images/asset-201sls_sponsor_glas.svg" },
     { src: "images/sls_sponsor_revival.svg" },
-    { src: "images/sls_sponsor_smcu.png" }
+    { src: "images/sls_sponsor_smcu.png" },
+    { src: "images/sls_sponsor_deluxe_medallion.png", filter: "brightness(0) invert(1)" }
   ];
 
   const createGoldCard = (sponsor, template) => {
@@ -80,6 +81,7 @@
         image.setAttribute("aria-hidden", "true");
         image.src = sponsor.src;
         image.className = "brand-logo";
+        if (sponsor.filter) image.style.filter = sponsor.filter;
         return image;
       }));
     });
