@@ -1,6 +1,6 @@
 (() => {
   const iconLabels = {
-    "mailto:info@silverlakeshorts.com": "Email Silver Lake Shorts",
+    "mailto:silverlakeshorts@gmail.com": "Email Silver Lake Shorts",
     "https://discord.gg/S6UrEegnEG": "Silver Lake Shorts on Discord",
     "https://www.instagram.com/silverlakeshorts": "Silver Lake Shorts on Instagram",
     "https://www.venmo.com/u/silverlakeshorts": "Donate with Venmo",
