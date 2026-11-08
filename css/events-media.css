@@ -7,3 +7,8 @@
   margin: 0 auto;
   object-fit: contain;
 }
+
+/* Past November 2026 screening; keep it out of the upcoming-events listing. */
+#upcoming-events > [data-w-id="31f5a013-8f45-805e-bc2f-30a082cc026b"] {
+  display: none;
+}
